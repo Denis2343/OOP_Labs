@@ -10,7 +10,7 @@ enum Trit { False, Unknown, True };
 class TritSet {
 private:
 	std::vector<int> uint_;
-	int lastIndex_;
+	size_t lastIndex_;
 public:
 	TritSet(size_t size) {
 		uint_ = std::vector<int>(size, Unknown);
